@@ -28,7 +28,7 @@ export default function Login() {
       autoplay: true,
       animationData: require("../../assets/banking.json"),
     });
-  }, []);
+  }, [history]);
   const [loginState, setLoginState] = useState(false);
   return (
     <>

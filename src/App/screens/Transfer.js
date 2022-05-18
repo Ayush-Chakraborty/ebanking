@@ -24,7 +24,7 @@ export default function Transfer() {
   const history = useHistory();
   useEffect(() => {
     if (!localStorage.getItem("loggedIn")) history.replace("/");
-  }, []);
+  }, [history]);
   const theme = useTheme();
   const [alignment, setAlignment] = useState("savings");
 

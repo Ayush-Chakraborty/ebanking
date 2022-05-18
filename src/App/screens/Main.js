@@ -8,21 +8,21 @@ import { TextField } from "@mui/material";
 import DateAdapter from "@mui/lab/AdapterDateFns";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import {
-  Button,
+  // Button,
   Box,
   Select,
   FormControl,
   InputLabel,
   MenuItem,
   Typography,
-  Container,
+  // Container,
 } from "@mui/material";
 import TransactionHistory from "../components/TransactionHistory";
 const Main = () => {
   const history = useHistory();
   useEffect(() => {
     if (!localStorage.getItem("loggedIn")) history.replace("/");
-  }, []);
+  }, [history]);
   const [option, setOption] = useState(1);
   const [startingDate, setStartingDate] = React.useState(
     new Date(Date.now() - 7 * 86400 * 1000)
